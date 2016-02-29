@@ -1,0 +1,111 @@
+
+html{
+	height:100%;
+}
+
+body{
+	margin:0px;
+	font-family: 'Open Sans', sans-serif;
+	min-width:768px;
+	height:100%;
+}
+
+p{
+	padding:0px;
+	margin:0px;
+}
+
+a{
+	text-decoration: none;
+}
+
+ul{
+	margin:0px;
+}
+
+.heading{
+	font-size: 25px;
+}
+
+#topBanner{
+	top:0;
+	left:0;
+	width:100%;
+	height:50px;
+	font-size:33px;
+	position: fixed;
+	background:#3388FF;
+}
+
+#menuImageContainer{
+	display:inline-block;
+	height:50px;
+	line-height:50px;
+	text-align:right;
+	overflow:initial !important; /*JQuery likes to mess with the overflow when animating the width*/
+}
+
+#menuImage{
+	height:25px;
+	margin-right:12px;
+}
+
+#bottomArea{
+	height:100%;
+	padding-top:50px;
+}
+
+#leftMenu{
+	height:100%;
+	background:#004455;
+	float:left;
+	overflow: hidden;
+}
+
+.leftMenuWidth{
+	width:50px;
+}
+
+#contentArea{
+	background:#DDDDDD;
+	height:100%;
+	overflow: hidden;
+	padding:10px;
+
+}
+
+.menuItemImage{
+	display: inline-block;
+	background-size: 50px;
+	background-position: top right;
+	width:50px;
+	height:50px;
+	position:absolute;
+	right:0;
+}
+
+.menuItemText{
+	display:inline-block;
+	white-space: nowrap;
+	overflow:hidden;
+	padding-right:55px;
+	position:absolute;
+	right:0px;
+	color:white;
+	font-size: 16px;
+}
+
+.menuItemContainer{
+	height:50px;
+	line-height: 50px;
+	text-align: right;
+	position:relative;
+}
+
+.currentContentMenuItem{
+	background:#333;
+}
+
+article{
+	padding-left:10px;
+}
