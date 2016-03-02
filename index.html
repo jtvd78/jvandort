@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script> 
@@ -9,6 +10,162 @@
 		<script type="text/javascript" src="resources/js/code.js"></script>
 	</head>
 	<body>
+		
+
+		<div id="leftMenu" class="leftMenuWidth">
+
+			<div id = "spacerMenuItem" class="menuItemContainer">
+			</div>
+
+			<div id = "homePageMenuItem" class="menuItemContainer currentContentMenuItem">
+				<div class = "menuItemText">Home</div>
+				<div class = "menuItemImage" style="background-image: url('resources/images/home.png');"></div>
+			</div>
+
+			<div id = "educationMenuItem" class="menuItemContainer">
+				<div class = "menuItemText">Education and Work Experience</div>
+				<div class = "menuItemImage" style="background-image: url('resources/images/book.png');"></div>
+			</div>
+
+			<div id = "projectsMenuItem" class="menuItemContainer">
+				<div class = "menuItemText">Past and Current Projects</div>
+				<div class = "menuItemImage" style="background-image: url('resources/images/github.png');"></div>
+			</div>
+
+			<div id = "achievementsMenuItem" class="menuItemContainer">
+				<div class = "menuItemText">Notable Achievements</div>
+				<div class = "menuItemImage" style="background-image: url('resources/images/trophy.png');"></div>
+			</div>
+		</div>
+
+		<div id="contentArea">
+			<div id = "homePageContent" class="mainContent">
+				<p class="heading">Welcome to my Homepage!</p>
+				<br>
+
+				<article>
+					I am a student at the University of Maryland persuing a Computer Engineering degree. <br>
+					<br>
+
+					I am looking to achieve a position in Engineering, Computer Science, or IT, that would <br>
+					enable me to leverage my technical abilities while also allowing me to gain experience <br>
+					in a professional work environment. <br>
+					<br>
+
+					Here, you can find my online resume, which includes my Education and my past and current <br>
+					projects. Click on a menu item to to the left to begin.
+				</article>
+
+			</div>
+
+			<div id = "educationContent" class="mainContent">
+				<p class="heading">Education</p>
+				<br>
+				<article>
+					Somerville High School
+					<ul>
+						<li>Honors and AP math and sciences</li>
+						<li>SAT: 2210 Total, 800 Math</li>
+						<li>
+							<div id = "collapsable-1-header" class="collapsableHeader">
+								Show Classes
+							</div>
+							<div id="collapsable-1-content" class = "collapsable closed">
+								<ul>
+									<li>Introduction to Engineering</li>
+									<li>Principles of Engineering</li>
+									<li>Digital Electronics</li>
+									<li>Engineering Design and Development</li>
+									<li>Mobile App Development</li>
+									<li>AP Calculus BC</li>
+									<li>AP Statistics</li>
+									<li>Honors Chemistry</li>
+									<li>AP Chemistry</li>
+									<li>AP Physics</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+
+					The University of Maryland
+					<ul>
+						<li>Persuing a computer engineering degree</li>
+						<li>Achieved Presidential Scholarship</li>
+						<li>3.9 GPA</li>
+						<li>
+							<div id = "collapsable-2-header" class="collapsableHeader">
+								Show Classes
+							</div>
+							<div id="collapsable-2-content" class = "collapsable closed">
+								<ul>
+									<li>MATH140: Caculus I</li>
+									<li>MATH141: Caculus II</li>
+									<li>CMSC131: Object-Oriented Programming I</li>
+									<li>CMSC132: Object-Oriented Programming II</li>
+									<li>ENES100: Introduction to Engineering Design</li>
+									<li>ENEE101: Introduction to Electrical And Computer Engineering</li>
+									<li>PHYS161: General Physics: Mechanics and Particle Dynamics</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</article>
+
+				<br>
+				<p class="heading">Work Experience</p>
+				<br>
+				<article>
+					Staples EasyTech Sales Associate
+					<ul>
+						<li>Sept. 2014 - Jan. 2015</li>
+						<li>Learned retail sales skills and management structure</li>
+					</ul>
+
+					Summer Tech Assistant at Somerville High School
+					<ul>
+						<li>July - August 2015</li>
+						<li>Gained experience with desktop imaging, networking, laptop repair, and general troubleshooting.</li>
+					</ul>
+				</article>
+			</div>
+
+			<div id = "projectsContent" class="mainContent">
+				<p class="heading">Software Projects</p>
+				<br>
+				<article>
+					<a href = "https://github.com/jtvd78"> Check out my github!</a>
+					<br>
+					<br>
+					<a href = "https://github.com/jtvd78/jvandort">This page (github)</a>
+					<br>
+					<a href = "http://jvandort.com/NextBeat/index.html">A SoundCloud web-player (live page)</a>
+					<br>
+					<a href = "https://github.com/jtvd78/graphing-calculator">Custom, fully-functional graphing calculator (github)</a>
+					<br>
+					<a href = "https://github.com/jtvd78/schedule">Schedule visualizer which takes data from Maryland's webpage (github)</a>
+					<br>
+					<a href = "https://github.com/nishant217/TES2DO">Web-based schedule visualizer which builds upon my java-based version (github)</a>
+				</article>
+				<br>
+				<p class="heading">High School Senior Engineering Project</p>
+				<br>
+				<article>
+					<img src="resources/images/box.jpg" style="width:500px">
+				</article>
+			</div>
+
+			<div id = "achievementsContainer" class="mainContent">
+				<p class="heading">Achievements</p>
+				<br>
+				<article>
+					<ul>
+						<li>Eagle Scout</li>
+						<li>PADI Certified Rescue Diver</li>
+						<li>Achieved Presidential Scholarship at the University of Maryland</li>
+					</ul>
+				</article>
+			</div>
+		</div>
 		<div id="topBanner">
 
 			<div id = "menuImageContainer" class="leftMenuWidth">
@@ -18,110 +175,5 @@
 			<div style="display:inline-block;">Justin Van Dort</div> 
 		</div>
 
-		<div id="bottomArea">
-			<div id="leftMenu" class="leftMenuWidth">
-
-				<div id = "homePageMenuItem" class="menuItemContainer currentContentMenuItem">
-					<div class = "menuItemText">Home</div>
-					<div class = "menuItemImage" style="background-image: url('resources/images/home.png');"></div>
-				</div>
-
-				<div id = "educationMenuItem" class="menuItemContainer">
-					<div class = "menuItemText">Education and Work Experience</div>
-					<div class = "menuItemImage" style="background-image: url('resources/images/book.png');"></div>
-				</div>
-
-				<div id = "projectsMenuItem" class="menuItemContainer">
-					<div class = "menuItemText">Past and Current Projects</div>
-					<div class = "menuItemImage" style="background-image: url('resources/images/github.png');"></div>
-				</div>
-
-				<div id = "achievementsMenuItem" class="menuItemContainer">
-					<div class = "menuItemText">Notable Achievements</div>
-					<div class = "menuItemImage" style="background-image: url('resources/images/trophy.png');"></div>
-				</div>
-			</div>
-
-			<div id="contentArea">
-				<div id = "homePageContent" class="mainContent">
-					<p class="heading">Welcome to my Homepage!</p>
-					<br>
-
-					<article>
-						Here, you can find my online resume, which includes my Education and my past and current projects.<br>
-						Click on a menu item to to the left to begin.
-					</article>
-
-				</div>
-
-				<div id = "educationContent" class="mainContent">
-					<p class="heading">Education</p>
-					<br>
-					<article>
-						Somerville High School
-						<ul>
-							<li>Honors and AP math and sciences</li>
-							<li>SAT: 2210 Total, 800 Math</li>
-							<li>Completed an extensive 4-year engineering program</li>
-						</ul>
-
-						The University of Maryland
-						<ul>
-							<li>Persuing a computer engineering degree</li>
-							<li>Achieved Presidential Scholarship</li>
-							<li>3.9 GPA</li>
-						</ul>
-					</article>
-
-					<br>
-					<p class="heading">Work Experience</p>
-					<br>
-					<article>
-						Staples EasyTech Sales Associate
-						<ul>
-							<li>Sept. 2014 - Jan. 2015</li>
-							<li>Learned retail sales skills and management structure</li>
-						</ul>
-
-						Summer Tech Assistant at Somerville High School
-						<ul>
-							<li>July - August 2015</li>
-							<li>Gained experience with desktop imaging, networking, laptop repair, and general troubleshooting.</li>
-						</ul>
-					</article>
-				</div>
-
-				<div id = "projectsContent" class="mainContent">
-					<p class="heading">Projects</p>
-					<br>
-					<article>
-						<a href = "https://github.com/jtvd78"> Check out my github!</a>
-						<br>
-						<br>
-						<a href = "https://github.com/jtvd78/jvandort">This page (github)</a>
-						<br>
-						<a href = "http://www.jvandort.com/NextBeat/index.html">A SoundCloud web-player (live page)</a>
-						<br>
-						<a href = "https://github.com/jtvd78/graphing-calculator">Custom, fully-functional graphing calculator (github)</a>
-						<br>
-						<a href = "https://github.com/jtvd78/schedule">Schedule visualizer which takes data from Maryland's webpage (github)</a>
-						<br>
-						<a href = "https://github.com/nishant217/TES2DO">Web-based schedule visualizer which builds upon my java-based version (github)</a>
-					</article>
-				</div>
-
-				<div id = "achievementsContainer" class="mainContent">
-					<p class="heading">Achievements</p>
-					<br>
-					<article>
-						<ul>
-							<li>Eagle Scout</li>
-							<li>PADI Certified Rescue Diver</li>
-							<li>Achieved Presidential Scholarship at the University of Maryland</li>
-						</ul>
-					</article>
-				</div>
-			</div>
-		</div>
 	</body>
 </html>

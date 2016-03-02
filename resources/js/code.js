@@ -51,4 +51,14 @@ var start = function(){
 		$(".menuItemContainer").toggleClass("currentContentMenuItem", false);
 		$("#achievementsMenuItem").toggleClass("currentContentMenuItem", true);
 	});
+
+
+	$(".collapsableHeader").click(function(event){
+		var childId = 'collapsable-'+event.target.id.split("-")[1]+'-content';
+		$("#" + childId).toggleClass("open closed");
+		console.log(childId);
+	});
+
+
+
 }

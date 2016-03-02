@@ -8,6 +8,9 @@ body{
 	font-family: 'Open Sans', sans-serif;
 	min-width:768px;
 	height:100%;
+
+
+	background:#FFFFFF;
 }
 
 p{
@@ -50,16 +53,12 @@ ul{
 	margin-right:12px;
 }
 
-#bottomArea{
-	height:100%;
-	padding-top:50px;
-}
-
 #leftMenu{
 	height:100%;
 	background:#004455;
 	float:left;
 	overflow: hidden;
+
 }
 
 .leftMenuWidth{
@@ -70,8 +69,27 @@ ul{
 	background:#DDDDDD;
 	height:100%;
 	overflow: hidden;
-	padding:10px;
+	margin-left:50px;
+}
 
+.collapsableHeader{
+	cursor:pointer;
+	text-decoration: underline;
+	display:inline-block;
+}
+
+.open{
+	display:block;
+}
+
+.closed{
+	display:none;
+}
+
+.mainContent{
+	padding:60px 10px 10px 10px;
+	overflow: auto;
+	height:100%;
 }
 
 .menuItemImage{
