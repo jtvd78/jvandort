@@ -5,10 +5,14 @@ $(document).ready(function(){
 var open = false;
 
 var start = function(){
-	$("#menuImageContainer").click(function(event){
+
+	//$("#menuImageContainer").click(function(event){
+	$("#leftMenu").hover(function(event){
 		if(!open){
+			$(".leftMenuWidth").stop();
 			$(".leftMenuWidth").animate({width:"300px"},{duration:300,specialEasing:{width:'swing'}});
 		}else{
+			$(".leftMenuWidth").stop();
 			$(".leftMenuWidth").animate({width:"50px"},{duration:300,specialEasing:{width:'swing'}});
 		}
 		open = !open;
@@ -52,13 +56,9 @@ var start = function(){
 		$("#achievementsMenuItem").toggleClass("currentContentMenuItem", true);
 	});
 
-
 	$(".collapsableHeader").click(function(event){
 		var childId = 'collapsable-'+event.target.id.split("-")[1]+'-content';
 		$("#" + childId).toggleClass("open closed");
 		console.log(childId);
 	});
-
-
-
 }

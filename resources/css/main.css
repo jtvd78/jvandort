@@ -9,8 +9,7 @@ body{
 	min-width:768px;
 	height:100%;
 
-
-	background:#FFFFFF;
+	background:#DDDDDD;
 }
 
 p{
@@ -38,6 +37,17 @@ ul{
 	font-size:33px;
 	position: fixed;
 	background:#3388FF;
+
+	z-index: 10;
+}
+
+#fakeMenuSpacer{
+	height:1px;
+	display:inline-block;
+}
+
+#contentArea{
+	display:inline-block;
 }
 
 #menuImageContainer{
@@ -59,6 +69,9 @@ ul{
 	float:left;
 	overflow: hidden;
 
+	position:fixed;
+	z-index:9;
+
 }
 
 .leftMenuWidth{
@@ -68,8 +81,6 @@ ul{
 #contentArea{
 	background:#DDDDDD;
 	height:100%;
-	overflow: hidden;
-	margin-left:50px;
 }
 
 .collapsableHeader{
