@@ -56,6 +56,14 @@ var start = function(){
 		$("#achievementsMenuItem").toggleClass("currentContentMenuItem", true);
 	});
 
+	$("#scoutsMenuItem").click(function(){
+		$(".mainContent").hide();
+		$("#scoutsContainer").show();
+
+		$(".menuItemContainer").toggleClass("currentContentMenuItem", false);
+		$("#scoutsMenuItem").toggleClass("currentContentMenuItem", true);
+	});
+
 	$(".collapsableHeader").click(function(event){
 		var childId = 'collapsable-'+event.target.id.split("-")[1]+'-content';
 		$("#" + childId).toggleClass("open closed");
