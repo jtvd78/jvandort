@@ -55,7 +55,6 @@ ul{
 	height:50px;
 	line-height:50px;
 	text-align:right;
-	overflow:initial !important; /*JQuery likes to mess with the overflow when animating the width*/
 }
 
 #menuImage{

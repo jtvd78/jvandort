@@ -8,12 +8,16 @@ var start = function(){
 
 	//$("#menuImageContainer").click(function(event){
 	$("#leftMenu").hover(function(event){
+
+		//JQuery likes to mess with the overflow when animating the width, so it is necessary
+		//to add the overflow:visible when animating in order to keep the UI from messing up
+
 		if(!open){
 			$(".leftMenuWidth").stop();
-			$(".leftMenuWidth").animate({width:"300px"},{duration:300,specialEasing:{width:'swing'}});
+			$(".leftMenuWidth").animate({width:"300px"},{duration:300,specialEasing:{width:'swing'}}).css('overflow','visible');
 		}else{
 			$(".leftMenuWidth").stop();
-			$(".leftMenuWidth").animate({width:"50px"},{duration:300,specialEasing:{width:'swing'}});
+			$(".leftMenuWidth").animate({width:"50px"},{duration:300,specialEasing:{width:'swing'}}).css('overflow','visible');
 		}
 		open = !open;
 		
