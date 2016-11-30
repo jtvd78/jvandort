@@ -62,6 +62,10 @@ ul{
 	margin-right:12px;
 }
 
+p {
+    text-indent: 50px;
+}
+
 #leftMenu{
 	height:100%;
 	background:#004455;
@@ -80,6 +84,7 @@ ul{
 #contentArea{
 	background:#DDDDDD;
 	height:100%;
+	width:900px;
 }
 
 .collapsableHeader{

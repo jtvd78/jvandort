@@ -35,15 +35,15 @@
 					<div class = "menuItemImage" style="background-image: url('resources/images/home.png');"></div>
 				</div>
 
-				<div id = "educationMenuItem" class="menuItemContainer mouse_hover">
-					<div class = "menuItemText">Education, Work, And Skills</div>
-					<div class = "menuItemImage" style="background-image: url('resources/images/book.png');"></div>
-				</div>
-
 				<div id = "nextbeatMenuItem" class="menuItemContainer mouse_hover">
 					<div class = "menuItemText">NextBeat</div>
 					<div class = "menuItemImage" style="background-image: url('resources/images/nextbeat.png');"></div>
 				</div>
+
+				<div id = "educationMenuItem" class="menuItemContainer mouse_hover">
+					<div class = "menuItemText">Education, Work, And Skills</div>
+					<div class = "menuItemImage" style="background-image: url('resources/images/book.png');"></div>
+				</div>				
 
 				<div id = "projectsMenuItem" class="menuItemContainer mouse_hover">
 					<div class = "menuItemText">Past and Current Projects</div>
@@ -65,56 +65,38 @@
 
 			<div id="contentArea">
 				<div id = "homePageContent" class="mainContent">
-					<p class="heading">Welcome to my Homepage!</p>
+					<div class="heading">Welcome to my Homepage!</div>
 					<br>
 
 					<article>
-						I am a sophomore at the University of Maryland pursuing a Computer Engineering degree. <br>
-						<br>
-
-						I am looking to achieve a position in Engineering, Computer Science, or IT, that would <br>
-						enable me to leverage my technical abilities while also allowing me to gain experience <br>
-						in a professional work environment. <br>
-						<br>
-
-						Here, you can find my online resume, which includes my education as well as my past and<br>
-						current projects. Click on a menu item to to the left to begin.
-
-						<br>
-						<br>
+						<p>
+							I am a sophomore at the University of Maryland pursuing a Computer Engineering degree.
+							I have the most experience coding in Java and Android, though I am proficent in HTML/CSS/JS
+							for front end and Node.js/Express.js for back end. Here, you can find my online resume, which includes
+							my education as well as my past and current projects. Click on a menu item to to the left to begin.
+						</p><br>
+						<p>
+							I am looking to achieve a position in Engineering, Computer Science, or IT, that would
+							enable me to leverage my technical abilities while also allowing me to gain experience
+							in a professional work environment. 
+						</p><br>
+						
 						<a class="skipNB" style="font-weight: bold;" href="#">Skip to the good stuff!</a>: My most current project
+
+						<br>
+						<br>
+						<span>
+							Note: This webpage was designed for desktop browsers and may not function correctly on mobile
+						</span>
 					</article>
 
 				</div>
 
 				<div id = "educationContent" class="mainContent">
-					<p class="heading">Education</p>
+					<div class="heading">Education</div>
 					<br>
 					<article>
-						Somerville High School
-						<ul>
-							<li>Honors and AP math and sciences</li>
-							<li>SAT: 2210 Total, 800 Math</li>
-							<li>
-								<div id = "collapsable-1-header" class="collapsableHeader">
-									Show Classes
-								</div>
-								<div id="collapsable-1-content" class = "collapsable closed">
-									<ul>
-										<li>Introduction to Engineering</li>
-										<li>Principles of Engineering</li>
-										<li>Digital Electronics</li>
-										<li>Engineering Design and Development</li>
-										<li>Mobile App Development</li>
-										<li>AP Calculus BC</li>
-										<li>AP Statistics</li>
-										<li>Honors Chemistry</li>
-										<li>AP Chemistry</li>
-										<li>AP Physics</li>
-									</ul>
-								</div>
-							</li>
-						</ul>
+						
 
 						The University of Maryland
 						<ul>
@@ -143,10 +125,37 @@
 								</div>
 							</li>
 						</ul>
+
+						<br>
+
+						Somerville High School
+						<ul>
+							<li>Honors and AP math and sciences</li>
+							<li>SAT: 2210 Total, 800 Math</li>
+							<li>
+								<div id = "collapsable-1-header" class="collapsableHeader">
+									Show Classes
+								</div>
+								<div id="collapsable-1-content" class = "collapsable closed">
+									<ul>
+										<li>Introduction to Engineering</li>
+										<li>Principles of Engineering</li>
+										<li>Digital Electronics</li>
+										<li>Engineering Design and Development</li>
+										<li>Mobile App Development</li>
+										<li>AP Calculus BC</li>
+										<li>AP Statistics</li>
+										<li>Honors Chemistry</li>
+										<li>AP Chemistry</li>
+										<li>AP Physics</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
 					</article>
 
 					<br>
-					<p class="heading">Work Experience</p>
+					<div class="heading">Work Experience</div>
 					<br>
 					<article>
 						Technical Support Specialist at Somerville High School
@@ -154,11 +163,13 @@
 							<li>June - August 2016</li>
 							<li>Oversaw Summer Tech Assistants, supervisor role, gained experience with active directory</li>
 						</ul>
+						<br>
 						Summer Tech Assistant at Somerville High School
 						<ul>
 							<li>July - August 2015</li>
 							<li>Gained experience with desktop imaging, networking, laptop repair, and general troubleshooting.</li>
 						</ul>
+						<br>
 						Staples EasyTech Sales Associate
 						<ul>
 							<li>Sept. 2014 - Jan. 2015</li>
@@ -167,7 +178,7 @@
 					</article>
 
 					<br>
-					<p class="heading">Skills</p>
+					<div class="heading">Skills</div>
 					<br>
 					<article>
 						<ul>
@@ -188,50 +199,58 @@
 				</div>
 
 				<div id = "nextbeatContainer" class="mainContent">
-					<p class="heading">Next Beat</p>
+					<div class="heading">Next Beat</div>
 					<br>
 					<article>
-						Next Beat is my current primary project, and most of my programming effort goes towards its development.<br>
-						It consists of a Android app portion, which is what the user uses, and a Node.js server which hosts a <br>
-						RESTful API for the Android app to use.<br>
-						<br>
 
-						The point of Next Beat is to be able to play tracks from both Spotify and Soundcloud, seamlessly, without <br>
-						switching between their respective apps. All playback is controlled through my app, and users are able to <br>
-						create playlists with tracks from both music sources. Features include friending other next beat users, <br> 
-						sharing playlists, queueing tracks from both media sources, viewing spotify artists/albums, a fully featured <br>
-						search function, a player notification, and many others. <br>
-						<br>
+						<p>
+						Next Beat is my current primary project, and most of my programming effort goes towards its development.
+						It consists of a Android app portion, which is what the user uses, and a Node.js server which hosts a
+						RESTful API for the Android app to use.
+						</p><br>
 
-						I began developing this application at the beginning of September 2016 with no knowledge of Android programming, <br>
-						other than being able to program in standard Java. In just about 3 months, I was able to teach myself how to program <br>
-						Android applications, as well as how to use Node.js to host a RESTful server with MySQL as a database. <br>
-						<br>
+						<p>
+						The point of Next Beat is to be able to play tracks from both Spotify and Soundcloud, seamlessly, without
+						switching between their respective apps. All playback is controlled through my app, and users are able to 
+						create playlists with tracks from both music sources. Features include friending other next beat users,
+						sharing playlists, queueing tracks from both media sources, viewing spotify artists/albums, a fully featured
+						search function, a player notification, and many others. 
+						</p><br>
 
-						I am currently hosting my app on the app store, in a private beta for my friends to help test it out. <br>
-						I would love to share the app's source, but since I hope to eventually market and monetize my idea, I <br>
-						cannot share any of the source code. However, I am able to share screenshots from my application, and I<br>
-						hope these are able to convey my work properly. To see my open source code, please visit the <a href="#" class="skipProj">projects page</a>
-						<br> 
+						<p>
+						I began developing this application at the beginning of September 2016 with no knowledge of Android programming,
+						other than being able to program in standard Java. In just about 3 months, I was able to teach myself how to program 
+						Android applications, as well as how to use Node.js to host a RESTful server with MySQL as a database. 
+						</p><br>
+
+						<p>
+						I am currently hosting my app on the app store, in a private beta for my friends to help test it out.
+						I would love to share the app's source, but since I hope to eventually market and monetize my idea, I 
+						cannot share any of the source code. However, I am able to share screenshots from my application, and I
+						hope these are able to convey my work properly. To see my open source code, please visit the <a href="#" class="skipProj">projects page</a>.					
+						</p><br>
+
+						<p>
+							If you would like to try out Next Beat on Android, I can provide beta access on request.
+							Please e-mail me at the e-mail address provided in my resume. 
+						</p>
 						<br>
 
 						Screenshots:
 
 						<article>
-							<img src="resources/images/sc/sc1.png" style="width:256px">
-							<img src="resources/images/sc/sc2.png" style="width:256px">
+							<img src="resources/images/sc/sc1.png" style="width:280px">
+							<img src="resources/images/sc/sc8.png" style="width:280px">
+							<img src="resources/images/sc/sc2.png" style="width:280px">
 						</article>
 						<article>
-							<img src="resources/images/sc/sc3.png" style="width:256px">
-							<img src="resources/images/sc/sc4.png" style="width:256px">
+							<img src="resources/images/sc/sc3.png" style="width:280px">
+							<img src="resources/images/sc/sc4.png" style="width:280px">
+							<img src="resources/images/sc/sc5.png" style="width:280px">	
 						</article>
 						<article>
-							<img src="resources/images/sc/sc5.png" style="width:256px">
-							<img src="resources/images/sc/sc6.png" style="width:256px">	
-						</article>
-						<article>
-							<img src="resources/images/sc/sc7.png" style="width:256px">
-							<img src="resources/images/sc/sc8.png" style="width:256px">	
+							<img src="resources/images/sc/sc6.png" style="width:280px">
+							<img src="resources/images/sc/sc7.png" style="width:280px">	
 						</article>
 
 
@@ -239,7 +258,7 @@
 				</div>
 
 				<div id = "projectsContent" class="mainContent">
-					<p class="heading">Software Projects</p>
+					<div class="heading">Software Projects</div>
 
 
 					<br>
@@ -274,7 +293,7 @@
 								<ul>
 									
 									<li>
-										See how I created the tree UI on the right side of the schedule builder by reading over <a href = "https://github.com/jtvd78/Library/blob/master/Library/src/com/hoosteen/tree/Node.java">Node.java</a> and <a href = "https://github.com/jtvd78/Library/blob/master/Library/src/com/hoosteen/tree/TreeComp.java">TreeComp.java</a> 
+										See how I created the tree UI on the right side of the schedule builder by reviewing <a href = "https://github.com/jtvd78/Library/blob/master/Library/src/com/hoosteen/tree/Node.java">Node.java</a> and <a href = "https://github.com/jtvd78/Library/blob/master/Library/src/com/hoosteen/tree/TreeComp.java">TreeComp.java</a> 
 									</li>
 									<li>
 										My node/tree code is very portable and I have used it in several projects. 
@@ -306,7 +325,7 @@
 				</div>
 
 				<div id = "achievementsContainer" class="mainContent">
-					<p class="heading">Achievements</p>
+					<div class="heading">Achievements</div>
 					<br>
 					<article>
 						<ul>
@@ -324,11 +343,32 @@
 				</div>
 
 				<div id = "scoutsContainer" class="mainContent">
-					<p class="heading">Boy Scouts</p>
+					<div class="heading">Boy Scouts - Eagle Project</div>
 					<br>
+					<div style="width:425px; text-align:center; display:inline-block">Before:</div>
+					<div style="width:425px; text-align:center; display:inline-block">After:</div>
 					<article>
-						Page under construction
+						<img src="resources/images/eagle/old1.jpg" style="width:425px">
+						<img src="resources/images/eagle/new1.jpg" style="width:425px">
 					</article>
+					<article>
+						<img src="resources/images/eagle/old2.jpg" style="width:425px">
+						<img src="resources/images/eagle/new2.jpg" style="width:425px">
+					</article>
+					
+
+					<div style="width:850px; text-align:center; display:inline-block">During:</div>
+
+					<article>
+						<img src="resources/images/eagle/dur1.jpg" style="width:850px">
+					</article>
+					<article>
+						<img src="resources/images/eagle/dur2.jpg" style="width:850px">
+					</article>
+					<article>
+						<img src="resources/images/eagle/dur3.jpg" style="width:850px">
+					</article>
+
 				</div>
 			</div>
 		</div>
