@@ -88,6 +88,10 @@ ul{
 	display:inline-block;
 }
 
+.mouse_hover:hover{
+	cursor: pointer;
+}
+
 .open{
 	display:block;
 }

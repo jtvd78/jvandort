@@ -44,6 +44,25 @@ var start = function(){
 		$("#educationMenuItem").toggleClass("currentContentMenuItem", true);
 	});
 
+	$("#nextbeatMenuItem").click(function(){
+		$(".mainContent").hide();
+		$("#nextbeatContainer").show();
+
+		$(".menuItemContainer").toggleClass("currentContentMenuItem", false);
+		$("#nextbeatMenuItem").toggleClass("currentContentMenuItem", true);
+	});
+
+	$(".skipNB").click(function(){
+		$(".mainContent").hide();
+		$("#nextbeatContainer").show();
+
+		$(".menuItemContainer").toggleClass("currentContentMenuItem", false);
+		$("#nextbeatMenuItem").toggleClass("currentContentMenuItem", true);
+	});
+
+
+
+
 	$("#projectsMenuItem").click(function(){
 		$(".mainContent").hide();
 		$("#projectsContent").show();
