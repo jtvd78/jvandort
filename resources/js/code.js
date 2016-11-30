@@ -71,6 +71,14 @@ var start = function(){
 		$("#projectsMenuItem").toggleClass("currentContentMenuItem", true);
 	});
 
+	$(".skipProj").click(function(){
+		$(".mainContent").hide();
+		$("#projectsContent").show();
+
+		$(".menuItemContainer").toggleClass("currentContentMenuItem", false);
+		$("#projectsMenuItem").toggleClass("currentContentMenuItem", true);
+	});
+
 	$("#achievementsMenuItem").click(function(){
 		$(".mainContent").hide();
 		$("#achievementsContainer").show();
