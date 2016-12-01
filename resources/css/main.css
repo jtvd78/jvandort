@@ -48,6 +48,7 @@ ul{
 
 #contentArea{
 	display:inline-block;
+	overflow-x: hidden;
 }
 
 #menuImageContainer{
@@ -83,8 +84,10 @@ p {
 
 #contentArea{
 	background:#DDDDDD;
-	height:100%;
-	width:900px;
+
+	position: absolute;
+	left:50px;
+	top:50px;
 }
 
 .collapsableHeader{
@@ -105,10 +108,19 @@ p {
 	display:none;
 }
 
+#contentSlider{
+	display:inline-block;
+}
+
 .mainContent{
-	padding:60px 10px 10px 10px;
+
+	
+
+	display: none;
+
+	padding:10px 10px 10px 10px;
 	overflow: auto;
-	height:100%;
+	width:900px;
 }
 
 .menuItemImage{
@@ -137,6 +149,11 @@ p {
 	line-height: 50px;
 	text-align: right;
 	position:relative;
+}
+
+/* Inherited by the content that is currently being shown*/
+.currentContent{
+
 }
 
 .currentContentMenuItem{
