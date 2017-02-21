@@ -37,8 +37,16 @@ var start = function(){
 		
 	});
 
-	//Show the homepage
-	setContent("#homePageContent");
+	if(window.location.hash && window.location.hash.substring(1) === "nextbeat") {
+      	//Show nextbeat
+      	setContent("#nextbeatContainer");
+
+		$(".menuItemContainer").toggleClass("currentContentMenuItem", false);
+		$("#nextbeatMenuItem").toggleClass("currentContentMenuItem", true);
+  	}else{
+  		//Show the homepage
+		setContent("#homePageContent");
+  	}
 
 	//Add listeners for left menu
 	$("#homePageMenuItem").click(function(){
